@@ -1,0 +1,9 @@
+digraph COVID_DAG {
+	rankdir=LR
+	S [label=Smoking]
+	C [label="Confounder (e.g., Age or Health Condition)"]
+	Sev [label="COVID-19 Severity"]
+	C -> S
+	C -> Sev
+	S -> Sev
+}
